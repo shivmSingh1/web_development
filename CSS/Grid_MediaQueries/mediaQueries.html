@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: wheat;
+            width: 100vw;
+            height: 10vh;
+            padding: 3vh;
+        }
+        li{
+            padding: 6vh;
+            display: inline;
+            list-style: none ;
+            /* text-align: center; */
+        }
+        @media screen and (max-width:700px) {
+
+            li{
+                display: block;
+                list-style: square inside;
+                padding: 0vh;
+            }
+        body{
+            background-color:crimson;
+        }
+        header{
+            padding: 1vh;
+        }
+            
+        }
+        @media screen and (max-width: 550px) {
+            li{
+                display: block;
+                list-style: square;
+                padding: 0vh;
+            }
+        body{
+            background-color:rgb(156, 72, 89);
+        }
+        header{
+            padding: 1vh;
+            font-size: 2vh;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quidem suscipit, earum fugiat, odit numquam vel dolorum labore delectus, iure eos. Omnis tempora nostrum deserunt non ea, ex cum harum.
+    </div>
+</body>
+</html>
