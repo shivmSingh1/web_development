@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            /* display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-content: center; */
+        }
+        img{
+            /* transform: translate(500px,100px); */
+            /* transform: scale(1,1); */
+            /* transform: rotate(0.5turn);  */
+            transform-origin: center;
+            /* transform: skew(30deg,30deg); */
+            transform: translate(500px,200px) rotate(45deg);
+            /* transform: matrix(1,2,3,4,5,6); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           <img src="https://source.unsplash.com/random" alt="img not found" width="300px" height="300px">
+        </div>
+    </div>
+</body>
+</html>
