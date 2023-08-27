@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            background-color: aquamarine;
+            width: 100vw;
+            height: 50vh;
+        }
+        header{
+            background-color: black;
+            height: 10vh;
+        }
+        li{
+            display: inline;
+            color: white;
+        }
+        .box1{
+            background-color: burlywood;
+            width: 100px;
+            height: 150px;
+            position: static;
+            left: 800px; /*no effect on box 1 */
+
+        }
+        .box2{
+            background-color:hotpink;
+            width: 105px;
+            height: 111px;
+            position: relative;
+            bottom: 151px;
+            left: 1212px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+<nav>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+</header>
+    <div class="content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia neque esse eius explicabo odit excepturi, corrupti iste, ut atque minus ullam vitae adipisci, aperiam eos?
+        <div class="box1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, maxime.
+        </div>
+        <div class="box2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nihil!
+        </div>
+    </div>
+</body>
+</html>
