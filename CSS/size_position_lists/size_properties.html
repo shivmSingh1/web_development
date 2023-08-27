@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative length properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            font-size: 20px;
+            background-color: cornflowerblue;
+            width: 100vw;    /* viewport width */
+            height: 50vh;    /* viewport height */
+        }
+        .em{
+            font-size: 2em; /* parent(content) font size * child(em) font size */
+        }
+        .rem{
+            font-size: 3rem; /* root (html) font size * child(.rem) font size */
+        }
+        .percent{
+            background-color: darkorange;
+            width: 50%;
+            height: 50%;
+            
+            /* half width and height relative to parent(content) width and height  */
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur, nobis minus ipsum ullam recusandae ratione harum excepturi accusamus quos.
+        <div class="em">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eius?
+        </div>
+        <div class="rem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, tempora?
+        </div>
+       <div class="percent">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, laboriosam.
+        </div>
+    </div>
+    
+</body>
+</html>
